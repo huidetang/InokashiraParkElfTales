@@ -1,12 +1,38 @@
 PREDEF:
-  - preface.re
+  - dedication.re
 
 CHAPS:
-  - test.re
+  井の頭公園のエルフの物語:
+    - kabe.re
+    - rusk.re
+    - yamai.re
+    - bouquet.re
+    - kuruna.re
+    - outoh-ki.re
+    - kawaii.re
+    - hokkai.re
+    - natsu-no-enishi.re
+    - fragment.re
+    - are.re
+    - tsugaru.re
+    - one-year-period.re
+    - watashi-no-yume.re
+    - fuyu-no-kabe.re
+  復活と脇道の物語:
+    - saigo-no-maru.re
+    - seiya.re
+    - kibou.re
+    - fukkatsu.re
+    - wakimichi.re
+  ぜんぶ雪のせいにする物語:
+    - yuki-no-seida.re
+  隠された過去:
+    - saisei.re
+    - wii-sama.re
+    - tokiniwa.re
 
 APPENDIX:
 
 POSTDEF:
   - postscript.re
-  - bib.re
 

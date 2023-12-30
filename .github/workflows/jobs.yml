@@ -91,8 +91,8 @@ jobs:
       - name: Upload artifact.
         uses: actions/upload-artifact@v3
         with:
-          name: book.pdf
-          path: book.pdf
+          name: louisa-complete-works-print.pdf
+          path: louisa-complete-works-print.pdf
   pdf-ebook:
     # needs: reviewdog-github-check
     name: Make PDF for Ebook
@@ -121,8 +121,8 @@ jobs:
       - name: Upload artifact.
         uses: actions/upload-artifact@v3
         with:
-          name: book.pdf
-          path: book.pdf
+          name: louisa-complete-works-ebook.pdf
+          path: louisa-complete-works-ebook.pdf
   epub:
     # needs: reviewdog-github-check
     name: Make EPUB
@@ -147,5 +147,5 @@ jobs:
       - name: Upload artifact.
         uses: actions/upload-artifact@v3
         with:
-          name: book.epub
-          path: book.epub
+          name: louisa-complete-works-epub.epub
+          path: louisa-complete-works-epub.epub

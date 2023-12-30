@@ -22,12 +22,12 @@ language: ja
 
 # 書名
 # 読みを入れる例 booktitle: {name: "Re:VIEW EPUBサンプル", file-as: "リビューイーパブサンプル"}
-booktitle: "現代焚書テンプレート"
-subtitle: "副題"
+booktitle: "井の頭公園のエルフの物語"
+subtitle: ""
 
 # 著者名。「, 」で区切って複数指定できる
 # 読みを入れる例 aut: [{name: "青木峰郎", file-as: "アオキミネロウ"}, {name: "武藤健志", file-as: "ムトウケンシ"}, {name: "高橋征義", file-as: "タカハシマサヨシ"}, {name: "角征典", file-as: "カドマサノリ"}]
-aut: ["ヨーシャ"]
+aut: [{name: "るいざ・しゃーろっと", file-as: "ルイザ・シャーロット"}, {name: "sun＠メタバース小説家", file-as: "サン＠メタバースショウセツカ"}]
 
 # 以下はオプション
 # 以下はオプション(autと同じように配列書式で複数指定可能)。
@@ -57,9 +57,9 @@ aut: ["ヨーシャ"]
 # a-oth, oth: その他
 # a-pht, pht: 撮影責任者
 # a-pbl, pbl: 出版社（発行所） ※ サークル名はここに設定するとよい
-a-pbl: 恢徳堂
+pbl: 井の頭文芸部
 # a-prt, prt: 印刷所
-# prt: ねこのしっぽ
+# prt: pixivFactory
 # a-red, red: 項目の枠組起草者
 # a-rev, rev: 評論者
 # a-spn, spn: 援助者
@@ -209,7 +209,7 @@ contentdir: _refiles
 # (文字幅を考慮した行数計測には、別途unicode-eaw gemファイルが必要)
 # ページあたりの行数文字数を用紙サイズで指定する(A5 or B5)
 # page_metric: A5
-page_metric: B5
+page_metric: A5
 #
 # あるいは、配列で指定することもできる
 # 各数字の意味は、順にリストの行数、リストの1行字数、テキストの行数、テキストの1行字数
