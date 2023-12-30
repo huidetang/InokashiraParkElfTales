@@ -2,7 +2,7 @@ PREDEF:
   - dedication.re
 
 CHAPS:
-  井の頭公園のエルフの物語:
+  - 井の頭公園のエルフの物語:
     - kabe.re
     - rusk.re
     - yamai.re
@@ -18,15 +18,15 @@ CHAPS:
     - one-year-period.re
     - watashi-no-yume.re
     - fuyu-no-kabe.re
-  復活と脇道の物語:
+  - 復活と脇道の物語:
     - saigo-no-maru.re
     - seiya.re
     - kibou.re
     - fukkatsu.re
     - wakimichi.re
-  ぜんぶ雪のせいにする物語:
+  - ぜんぶ雪のせいにする物語:
     - yuki-no-seida.re
-  隠された過去:
+  - 隠された過去:
     - saisei.re
     - wii-sama.re
     - tokiniwa.re

@@ -1,6 +1,6 @@
 inherit: ["config.yml"]
 page_metric: A5
-catalogfile: catalog-download.yml
+catalogfile: catalog.yml
 # backcover: backcover.tex
 bookname: louisa-complete-works-ebook
 texdocumentclass: ["review-jlreq", "media=ebook,paper=a5,fontsize=10pt,serial_pagination=true,tate,twoside,onecolumn"]
