@@ -3,6 +3,6 @@ page_metric: A5
 catalogfile: catalog.yml
 # backcover: backcover.tex
 bookname: louisa-complete-works-ebook
-texdocumentclass: ["review-jlreq", "media=ebook,paper=a5,fontsize=10pt,serial_pagination=true,tate,twoside,onecolumn"]
+texdocumentclass: ["review-jlreq", "media=ebook,paper=a5,fontsize=9pt,serial_pagination=true,tate,twoside,column_gap=2zw,onecolumn"]
 # pdfmaker:
 #   coverimage: c103frontcover.pdf
