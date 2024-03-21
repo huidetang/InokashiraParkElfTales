@@ -176,5 +176,5 @@ jobs:
       - name: Upload artifact.
         uses: actions/upload-artifact@v3
         with:
-          name: louisa-complete-works-vivliostyle.pdf
+          name: book.pdf
           path: louisa-complete-works-vivliostyle.pdf
