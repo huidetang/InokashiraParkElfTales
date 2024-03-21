@@ -1,6 +1,6 @@
 inherit: ["config.yml"]
 stylesheet: ["vivliostyle-a5.css"]
 catalogfile: catalog.yml
-bookname: louisa-complete-works-vivliostyle
+bookname: book
 highlight:
   html: "rouge"
