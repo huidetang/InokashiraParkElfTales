@@ -164,7 +164,7 @@ jobs:
       - name: Install Node Package.
         run: npm install
       - name: Compile SCSS.
-        run: npm run sass ./sass/vivliostyle-a5.scss vivliostyle-a5.css
+        run: npm run style
       - name: Install gems.
         run: bundle install
       - name: Copy plantuml.
