@@ -159,8 +159,12 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
-      - name: Install libgbm-dev
+      - name: Install libgbm-dev.
         run: sudo apt-get install -y libgbm-dev
+      - name: Install Node Package.
+        run: npm install
+      - name: Compile SCSS.
+        run: npm style
       - name: Install gems.
         run: bundle install
       - name: Copy plantuml.

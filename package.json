@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "textlint *.re"
+    "lint": "textlint *.re",
+    "style": "sass ./sass/vivliostyle-a5.scss vivliostyle-a5.css"
   },
   "repository": {
     "type": "git",
