@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+// 基本フォントサイズ
+$base-font-size: 8pt;
+// 基本行送り
+$base-line-height: 16pt;
+// 基本フォントファミリー
+$base-font-family: "EB Garamond", "Nanum Myeongjo", "Zen Old Mincho", serif;
+
+// ページのスタイル定義
+@import 'a5/format';
+// タイポグラフィのスタイル定義
+@import 'a5/typography';
+// コンテンツのスタイル定義
+@import 'a5/contents';
