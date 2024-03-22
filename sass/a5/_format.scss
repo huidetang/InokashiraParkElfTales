@@ -1,9 +1,9 @@
 @charset "UTF-8";
 
 // 行数
-$lines: 17;
+$lines: 23;
 // 1行あたり文字数
-$characters-per-line: 40;
+$characters-per-line: 42;
 
 html {
   /* 組み方向 */
@@ -29,10 +29,7 @@ html {
   width: $base-line-height * $lines;
   // フォントサイズ * 文字数
   height: $base-font-size * $characters-per-line;
-  margin-top: 20mm;
-  margin-bottom: 20mm;
-  margin-left: 18mm;
-  margin-right: 18mm;
+  margin: auto;
 }
 
 @page :left {
