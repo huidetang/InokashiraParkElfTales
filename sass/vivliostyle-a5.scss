@@ -1,7 +1,9 @@
 @charset "UTF-8";
-@import '@fontsource-variable/eb-garamond';
-@import "@fontsource/nanum-myeongjo";
-@import "@fontsource/zen-old-mincho";
+@import "../node_modules/@fontsource-variable/eb-garamond/wght-italic.css";
+@import "../node_modules/@fontsource/nanum-myeongjo/400.css";
+@import "../node_modules/@fontsource/nanum-myeongjo/700.css";
+@import "../node_modules/@fontsource/zen-old-mincho/400.css";
+@import "../node_modules/@fontsource/zen-old-mincho/700.css";
 
 // 基本フォントサイズ
 $base-font-size: 8pt;
