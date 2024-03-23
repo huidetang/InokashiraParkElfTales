@@ -7,14 +7,14 @@
   font-style: normal;
   font-display: swap;
   font-weight: 400 700;
-  src: url(/fonts/EBGaramond/EBGaramond-VariableFont_wght.ttf) format('truetype');
+  src: url(./fonts/EBGaramond/EBGaramond-VariableFont_wght.ttf) format('truetype');
 }
 
 @font-face {
   font-family: 'EB Garamond Variable';
   font-style: italic;
   font-weight: 400 700;
-  src: url(/fonts/EBGaramond/EBGaramond-Italic-VariableFont_wght.ttf) format('truetype');
+  src: url(./fonts/EBGaramond/EBGaramond-Italic-VariableFont_wght.ttf) format('truetype');
 }
 
 /* Nanum Myeongjo */
@@ -24,7 +24,7 @@
     font-style: normal;
     font-display: swap;
     font-weight: 400;
-    src: url(/fonts/NanumMyeongjo/NanumMyeongjo-Regular.ttf) format('truetype');
+    src: url(./fonts/NanumMyeongjo/NanumMyeongjo-Regular.ttf) format('truetype');
 }
 
 @font-face {
@@ -32,7 +32,7 @@
     font-style: normal;
     font-display: swap;
     font-weight: 700;
-    src: url(/fonts/NanumMyeongjo/NanumMyeongjo-Bold.ttf) format('truetype');
+    src: url(./fonts/NanumMyeongjo/NanumMyeongjo-Bold.ttf) format('truetype');
 }
 
 /* Noto Serif CJK jp */
@@ -41,7 +41,7 @@
     font-style: normal;
     font-display: swap;
     font-weight: 400;
-    src: url(/fonts/NotoSerifCJKjp/NotoSerifCJKjp-VF.otf) format('otf');
+    src: url(./fonts/NotoSerifCJKjp/NotoSerifCJKjp-VF.otf) format('otf');
 }
 
 @font-face {
@@ -49,7 +49,7 @@
     font-style: normal;
     font-display: swap;
     font-weight: 700;
-    src: url(/fonts/NotoSerifCJKjp/NotoSerifCJKjp-VF.otf) format('otf');
+    src: url(./fonts/NotoSerifCJKjp/NotoSerifCJKjp-VF.otf) format('otf');
 }
 
 /* 約物用フォント（約猫フォント） https://tama-san.com/yakucalt-font/ */
