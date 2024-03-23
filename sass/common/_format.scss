@@ -37,13 +37,6 @@ html {
     margin-top: 6mm;
     writing-mode: horizontal-tb;
   }
-  @right-middle {
-    /* 隠しノンブル */
-    content: counter(page);
-    font-size: 5.5pt;
-    vertical-align: top;
-    
-  }
 }
 
 @page :right {
