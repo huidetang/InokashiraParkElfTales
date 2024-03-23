@@ -40,7 +40,7 @@ REVIEW_VSCLI = ENV['REVIEW_VSCLI'] || 'vivliostyle'
 REVIEW_VSCLI_USESANDBOX = ENV['REVIEW_VSCLI_USESANDBOX'] ? '' : '--no-sandbox'
 REVIEW_VSCLI_PDF = ENV['REVIEW_VSCLI_PDF'] || BOOK_PDF
 REVIEW_VSCLI_PREVIEW_OPTIONS = ENV['REVIEW_VSCLI_PREVIEW_OPTIONS'] || ''
-REVIEW_VSCLI_BUILD_OPTIONS = ENV['REVIEW_VSCLI_BUILD_OPTIONS'] || '--preflight press-ready --preflight-option gray-scale -m --render-mode docker'
+REVIEW_VSCLI_BUILD_OPTIONS = ENV['REVIEW_VSCLI_BUILD_OPTIONS'] || '--preflight press-ready --preflight-option gray-scale -m'
 
 def build(mode, chapter)
   sh("review-compile --target=#{mode} --footnotetext --stylesheet=style.css #{chapter} > tmp")
