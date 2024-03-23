@@ -78,3 +78,9 @@ html {
     content: none;
   }
 }
+
+@media print {
+  .cover {
+    content: none;
+  }
+}
