@@ -25,6 +25,7 @@ html {
   // フォントサイズ * 文字数
   height: $content-height;
   margin: auto;
+  marks: crop;
 }
 
 @page :left {
@@ -36,6 +37,22 @@ html {
     margin-left: 3.75pt;
     margin-top: 6mm;
     writing-mode: horizontal-tb;
+  }
+
+  @right-middle {
+    /* 隠しノンブル */
+    font-size: 6pt;
+    margin-right: -3mm !important;
+    text-align: start !important;
+    content: counter(page);
+  }
+
+  @left-middle {
+    /* 隠しノンブル */
+    font-size: 6pt;
+    margin-left: -3mm !important;
+    align-items: end !important;
+    content: counter(page);
   }
 }
 

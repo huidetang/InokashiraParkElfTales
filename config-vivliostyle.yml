@@ -2,5 +2,6 @@ inherit: ["config.yml"]
 stylesheet: vivliostyle-a5.css
 catalogfile: catalog.yml
 bookname: book
+coverimage: null
 highlight:
   html: "rouge"
