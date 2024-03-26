@@ -124,6 +124,8 @@ pre {
 
 ul, ol {
   padding-inline-start: 1.5em;
+  margin-block-start: $base-line-height;
+  margin-block-end: $base-line-height;
 }
 
 /* 表組み */
