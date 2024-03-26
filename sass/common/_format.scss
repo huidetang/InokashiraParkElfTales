@@ -46,14 +46,6 @@ html {
     text-align: start !important;
     content: counter(page);
   }
-
-  @left-middle {
-    /* 隠しノンブル */
-    font-size: 6pt;
-    margin-left: -3mm !important;
-    align-items: end !important;
-    content: counter(page);
-  }
 }
 
 @page :right {
@@ -65,6 +57,14 @@ html {
     margin-right: 3.75pt;
     margin-top: 6mm;
     writing-mode: horizontal-tb;
+  }
+
+  @left-middle {
+    /* 隠しノンブル */
+    font-size: 6pt;
+    margin-left: -3mm !important;
+    align-items: end !important;
+    content: counter(page);
   }
 }
 
