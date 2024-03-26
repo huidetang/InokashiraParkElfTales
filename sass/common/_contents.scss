@@ -124,8 +124,8 @@ pre {
 
 ul, ol {
   padding-inline-start: 1.5em;
-  margin-block-start: $base-line-height;
-  margin-block-end: $base-line-height;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 /* 表組み */
@@ -165,8 +165,8 @@ table tr:last-child {
 
 blockquote {
   padding-inline-start: 1.5em;
-  margin-block-start: $base-line-height;
-  margin-block-end: $base-line-height;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .draft-author {
