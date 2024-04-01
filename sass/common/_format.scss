@@ -42,8 +42,9 @@ html {
   @right-middle {
     /* 隠しノンブル */
     font-size: 6pt;
-    margin-right: -3mm !important;
-    text-align: start !important;
+    margin-right: -3mm;
+    white-space: pre;
+    writing-mode: horizontal-tb;
     content: counter(page);
   }
 }
@@ -62,8 +63,9 @@ html {
   @left-middle {
     /* 隠しノンブル */
     font-size: 6pt;
-    margin-left: -3mm !important;
-    align-items: end !important;
+    margin-left: -3mm;
+    white-space: pre;
+    writing-mode: horizontal-tb;
     content: counter(page);
   }
 }
