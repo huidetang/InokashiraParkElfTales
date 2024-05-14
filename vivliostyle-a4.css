@@ -1,0 +1,466 @@
+@charset "UTF-8";
+/* EB Garamond Variable */
+@font-face {
+  font-family: "EB Garamond Variable";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400 700;
+  src: url(./fonts/EBGaramond/EBGaramond-VariableFont_wght.ttf) format("truetype");
+}
+@font-face {
+  font-family: "EB Garamond Variable";
+  font-style: italic;
+  font-weight: 400 700;
+  src: url(./fonts/EBGaramond/EBGaramond-Italic-VariableFont_wght.ttf) format("truetype");
+}
+/* Nanum Myeongjo */
+@font-face {
+  font-family: "Nanum Myeongjo";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url(./fonts/NanumMyeongjo/NanumMyeongjo-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Nanum Myeongjo";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src: url(./fonts/NanumMyeongjo/NanumMyeongjo-Bold.ttf) format("truetype");
+}
+/* Noto Serif CJK jp */
+@font-face {
+  font-family: "Noto Serif CJK jp";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url(./fonts/NotoSerifCJKjp/NotoSerifCJKjp-VF.otf) format("otf");
+}
+@font-face {
+  font-family: "Noto Serif CJK jp";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src: url(./fonts/NotoSerifCJKjp/NotoSerifCJKjp-VF.otf) format("otf");
+}
+/* 約物用フォント（約猫フォント） https://tama-san.com/yakucalt-font/ */
+@font-face {
+  font-family: "Yakumono";
+  src: url(./fonts/YakuCalt/YakuCaltMincho-R.woff) format("woff");
+}
+/* 印刷用のみ段組にする */
+@media print {
+  html {
+    column-count: 1;
+    column-gap: 2em;
+  }
+}
+html {
+  /* 組み方向 */
+  writing-mode: vertical-rl;
+  orphans: 1;
+  widows: 1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* タイトル文字列セット */
+.title {
+  string-set: title content();
+}
+
+@page {
+  size: 210mm 297mm;
+  width: 180mm;
+  height: 265mm;
+  margin-top: 17mm;
+  margin-bottom: 15mm;
+  marks: none;
+}
+@page :left {
+  margin-right: 18mm;
+  margin-left: 12mm;
+  @top-left {
+    /* 左上ノンブル、柱（タイトル文字列） */
+    content: counter(page) "　　" env(pub-title);
+    font-size: 5.5pt;
+    vertical-align: top;
+    margin-left: 3.75pt;
+    margin-top: 6mm;
+    writing-mode: horizontal-tb;
+  }
+  @right-middle {
+    /* 隠しノンブル */
+    font-size: 4pt;
+    margin-right: -3mm !important;
+    text-align: start !important;
+    content: counter(page);
+  }
+}
+@page :right {
+  margin-left: 18mm;
+  margin-right: 12mm;
+  @top-right {
+    /* 右上ノンブル、柱（出版物タイトル文字列） */
+    content: env(doc-title) "　　" counter(page);
+    font-size: 5.5pt;
+    vertical-align: top;
+    margin-right: 3.75pt;
+    margin-top: 6mm;
+    writing-mode: horizontal-tb;
+  }
+  @left-middle {
+    /* 隠しノンブル */
+    font-size: 4pt;
+    margin-left: -3mm !important;
+    align-items: end !important;
+    content: counter(page);
+  }
+}
+/* 表紙ページ */
+.cover {
+  page: cover;
+}
+
+@page cover {
+  @top-left {
+    content: none;
+  }
+  @top-right {
+    content: none;
+  }
+}
+/* 目次ページ */
+.toc {
+  page: toc;
+}
+
+@page toc {
+  @top-left {
+    content: none;
+  }
+  @top-right {
+    content: none;
+  }
+}
+@media print {
+  .cover {
+    content: none;
+  }
+}
+html {
+  /* フォント */
+  font-family: "EB Garamond", "Yakumono", "Noto Serif CJK jp", serif;
+  font-weight: normal;
+  /* 行末揃え */
+  text-align: justify;
+  font-size: 10pt;
+  line-height: 16pt;
+  /* 約物の調整 */
+  text-spacing: space-first allow-end ideograph-alpha ideograph-numeric;
+}
+
+h1 {
+  /* フォント */
+  font-weight: bold;
+  /* フォントサイズ */
+  font-size: 11.5pt;
+  /* 字下げ */
+  text-indent: 0;
+  /* 直後の改ページ・改段禁止 */
+  break-after: avoid;
+  line-height: 48pt;
+}
+
+h1.short {
+  letter-spacing: 1em;
+}
+
+.without-subsection h1 {
+  padding-block-end: 32pt;
+}
+
+h2 {
+  /* フォント */
+  font-weight: normal;
+  /* フォントサイズ */
+  font-size: 10pt;
+  /* 字下げ */
+  text-indent: 6em;
+  /* 直後の改ページ・改段禁止 */
+  break-after: avoid;
+  line-height: 32pt;
+}
+
+h1 + h2 {
+  margin-block-start: 16pt;
+}
+
+ruby > rt {
+  font-size: 50%;
+}
+
+p {
+  text-indent: 1em;
+  /* 段落先頭約物の調整、行末句読点ぶら下げあり */
+  hanging-punctuation: first allow-end;
+}
+p.noindent {
+  text-indent: 0;
+}
+p.center {
+  text-align: center;
+}
+p.flushright {
+  text-align: right;
+}
+
+/* 縦中横 */
+.tcy {
+  text-combine-upright: all;
+}
+
+/* 圏点（ゴマ） */
+em.sesame_dot {
+  font-style: normal;
+  text-emphasis-style: sesame;
+}
+
+/* 著作者 */
+.author {
+  display: block;
+  font-size: 10pt;
+  font-weight: bold;
+  text-align: end;
+}
+
+/* 画像＋キャプション */
+figure {
+  float-reference: page;
+  float: top;
+  width: 100%;
+  max-width: 180mm;
+  max-height: 265mm;
+  box-sizing: border-box;
+  writing-mode: horizontal-tb;
+}
+
+figure > img {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+figcaption {
+  text-align: left;
+  font-size: 7pt;
+  line-height: 14pt;
+  margin-bottom: 4pt;
+}
+
+figure > img[src$=".png"],
+figure > img[src$=".jpg"],
+figure > img[src$=".jpeg"] {
+  image-resolution: 300dpi;
+}
+
+p > img, div > img {
+  width: auto;
+  max-width: 180mm;
+  max-height: 265mm;
+}
+
+/* 奥付 */
+.colophon {
+  font-size: 7pt;
+  margin-block-start: 48pt;
+}
+.colophon p {
+  text-indent: 0;
+  hanging-punctuation: none;
+}
+
+/* 改ページ */
+.page-break {
+  page-break-after: always !important;
+}
+
+.colophon.page-break {
+  margin-right: 0;
+}
+
+/* 2字下げ */
+.indent-double {
+  padding-inline-start: 2em;
+  text-indent: 0;
+  hanging-punctuation: none;
+}
+
+/* 目次 */
+.toc ol {
+  list-style: none;
+}
+.toc ol a {
+  text-decoration: none;
+}
+.toc ol a::after {
+  content: target-counter(attr(href url), page);
+  text-combine-upright: all;
+  margin-inline-start: 2em;
+}
+
+/* 表紙 */
+.cover h1 {
+  line-height: 17.75em;
+  margin-block-start: 1.75em;
+}
+
+/* 3行あける */
+.line-03 {
+  margin-block-start: 48pt;
+}
+
+/* インデント解除 */
+.indent-none {
+  text-indent: 0;
+  hanging-punctuation: none;
+}
+
+/* 横幅全開 */
+div.note, div.memo, div.tip, div.info, div.warning, div.important, div.caution, div.notice {
+  border: solid 0.1mm #8394a5;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+img.max {
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+pre {
+  box-decoration-break: clone;
+}
+
+ul, ol {
+  padding-inline-start: 1.5em;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* 表組み */
+table {
+  display: table;
+  max-width: 100%;
+  margin: 1rem auto;
+  border-color: currentColor;
+  border-collapse: collapse;
+}
+
+table th, table td {
+  padding: 0.2em 0.2em 0.2em 0;
+  background-color: transparent;
+  border: 0;
+}
+
+table th:first-child, table td:first-child {
+  padding-left: 0.2em;
+}
+
+table th {
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+}
+
+table tr {
+  box-shadow: 0 0.7px 0 -0.3px currentColor;
+}
+
+table tr:last-child {
+  border-bottom: 1px solid;
+}
+
+/* 引用 */
+blockquote {
+  padding-inline-start: 1.5em;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.draft-author {
+  text-align: right;
+  margin-bottom: 3rem;
+}
+
+section {
+  counter-increment: section;
+  counter-reset: subsection;
+}
+
+section article {
+  counter-increment: subsection;
+}
+
+figure img.fig {
+  counter-increment: fig;
+}
+
+figure img.fig ~ figcaption::before {
+  content: "図" counter(fig) ": ";
+}
+
+figure.tbl {
+  counter-increment: tbl;
+}
+
+figure.tbl figcaption::before {
+  content: "表" counter(tbl) ": ";
+}
+
+/* 脚注 */
+.footnote {
+  counter-increment: footnote;
+}
+
+.footnote::footnote-call, .footnote::footnote-marker {
+  content: "[" counter(footnote) "]";
+}
+
+.footnote::footnote-call {
+  font-size: 80%;
+  margin: 0 0.3rem;
+}
+
+.footnote::footnote-marker {
+  margin-right: 0.2rem;
+}
+
+/* リスト */
+ol.cite-items {
+  padding-left: 2rem;
+  list-style: none;
+}
+
+ol.cite-items li {
+  counter-increment: cite;
+  position: relative;
+}
+
+ol.cite-items li::before {
+  content: "[" counter(cite) "] ";
+  position: absolute;
+  left: -2rem;
+}
+
+/* リンク */
+a {
+  text-decoration: none;
+  border-right: 1px dashed;
+  padding-right: 3px;
+}
+
+/*# sourceMappingURL=vivliostyle-a4.css.map */
