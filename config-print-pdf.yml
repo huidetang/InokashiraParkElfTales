@@ -1,4 +1,10 @@
 inherit: ["config.yml"]
-bookname: louisa-complete-works-print
+bookname: book-print-pdf
+booktitle: "並行現実小説集 総集編"
+history: [["2024-11-10"]]
+rights: (C) 2024 井の頭文芸部
 prt: ねこのしっぽ
-texdocumentclass: ["review-jlreq", "media=print,paper=a5,fontsize=9pt,serial_pagination=true,hiddenfolio=shippo,startpage=3,tate,twoside,onecolumn,column_gap=2zw,openany"]
+titlefile: title.tex
+pdfmaker:
+  colophon: colophon.tex
+texdocumentclass: ["review-jlreq", "media=print,paper=a6,fontsize=8pt,serial_pagination=true,hiddenfolio=shippo,startpage=3,tate,twoside,onecolumn,openany"]

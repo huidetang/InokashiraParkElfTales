@@ -1,8 +1,15 @@
 inherit: ["config.yml"]
 page_metric: A5
-catalogfile: catalog.yml
-# backcover: backcover.tex
-bookname: louisa-complete-works-ebook
-texdocumentclass: ["review-jlreq", "media=ebook,paper=a5,fontsize=9pt,serial_pagination=true,tate,twoside,column_gap=2zw,onecolumn"]
+# catalogfile: catalog-download.yml
+cover: cover.tex
+titlefile: title.tex
+pdfmaker:
+  colophon: colophon.tex
+backcover: backcover.tex
+bookname: book-pdf-ebook
+booktitle: "並行現実小説集 総集編"
+history: [["2024-11-10"]]
+rights: (C) 2024 井の頭文芸部
+texdocumentclass: ["review-jlreq", "media=ebook,paper=a6,fontsize=8pt,serial_pagination=true,tate,twoside,onecolumn"]
 # pdfmaker:
 #   coverimage: c103frontcover.pdf

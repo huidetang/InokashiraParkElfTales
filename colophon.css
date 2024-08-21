@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+@page {
+    size: 105mm 148mm;
+    width: 1447px;
+    height: 2039px;
+    margin: 0;
+    padding: 0;
+    marks: crop;
+}
+
+img {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    max-height: 100%;
+}

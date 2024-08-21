@@ -4,7 +4,7 @@
 // 基本フォントサイズ
 $base-font-size: 8pt;
 // 基本行送り
-$base-line-height: 16pt;
+$base-line-height: 1.4rem;
 // 基本フォントファミリー
 //$base-font-family: "EB Garamond", "Yakumono", "Nanum Myeongjo", "Noto Serif CJK jp", serif;
 $base-font-family: "EB Garamond", "Yakumono", "Noto Serif CJK jp", serif;
@@ -22,6 +22,11 @@ $koguchi: 12mm;
 // ノド
 $nodo: 18mm;
 
+//紙のサイズ
+$paper-size: a6;
+//塗り足しサイズ
+$bleed-size: 0;
+
 //紙の横幅
 $paper-width: 105mm;
 //紙の縦幅
@@ -30,9 +35,9 @@ $paper-height: 148mm;
 $marks: crop;
 
 //コンテンツの横幅
-$content-width: $base-line-height * $lines;
+$content-width: $paper-width - $koguchi - $nodo;
 //コンテンツの縦幅
-$content-height: $base-font-size * $characters-per-line;
+$content-height: $paper-height - $ten - $chi;
 
 // ページのスタイル定義
 @import 'common/format';

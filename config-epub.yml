@@ -1,5 +1,11 @@
 inherit: ["config.yml"]
-catalogfile: catalog.yml
-bookname: louisa-complete-works-epub
+# catalogfile: catalog-download.yml
+booktitle: "並行現実小説集 総集編"
+history: [["2024-11-10"]]
+rights: (C) 2024 井の頭文芸部
+bookname: book-epub
+coverimage: cover.png
+titlepage: true
+colophon: true
 # coverimage: c103frontcover.png
 # backcover: C103backcover.png

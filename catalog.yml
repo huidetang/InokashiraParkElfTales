@@ -2,7 +2,7 @@ PREDEF:
   - dedication.re
 
 CHAPS:
-  - VR小説作品集第1巻収録:
+  - VR小説作品集第一巻収録:
     - dedication1.re
     - saigo-no-maru.re
     - seiya.re
@@ -19,7 +19,7 @@ CHAPS:
     - bakhmut.re
     - ukraine.re
     - postscript1.re
-  - 並行現実小説集第2巻収録:
+  - 並行現実小説集第二巻収録:
     - dedication2.re
     - bouquet.re
     - kuruna.re
@@ -29,6 +29,17 @@ CHAPS:
     - natsu-no-enishi.re
     - yurodivy.re
     - postscript2.re
+  - 並行現実小説集第三巻収録: 
+    - dedication3.re
+    - are.re
+    - tsugaru.re
+    - one-year-period.re
+    - watashi-no-yume.re
+    - fuyu-no-shukusai.re
+    - sandaibanashi.re
+    - kinsho.re
+    - kaguya.re
+    - postscript3.re
   - 隠された過去:
     - saisei.re
     - wii-sama.re
