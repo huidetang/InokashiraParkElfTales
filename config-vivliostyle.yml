@@ -1,5 +1,5 @@
 inherit: ["config.yml"]
-stylesheet: vivliostyle-a6.css
+stylesheet: vivliostyle-a5.css
 # cover: null
 coverimage: cover.png
 titlepage: title.png
